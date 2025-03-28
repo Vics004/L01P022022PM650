@@ -13,6 +13,7 @@ namespace L01P022022PM650.Models
         public string? materia { get; set; }
         [DisplayName("Unidades Valorativas")]
         [Required(ErrorMessage = "NO es opcional")]
+        [Range(0, 10, ErrorMessage = "Solo Permite numeros del 0 al 10")]
         public int unidades_valorativas { get; set; }
         [DisplayName("Estado de la materia")]
         [Required(ErrorMessage = "NO es opcional")]
